@@ -4,10 +4,43 @@ OOB = "TEX_1936"
 
 set_technology = {
 	infantry_weapons = 1
+	infantry_weapons1 = 1
 	tech_support = 1
+	tech_engineers = 1
 	tech_recon = 1
+	gw_artillery = 1
+	gwtank = 1
+	basic_light_tank = 1
+	improved_light_tank = 1
+	basic_heavy_tank = 1
+	early_fighter = 1
+	fighter1 = 1
+	early_bomber = 1
+	tactical_bomber1 = 1
+	strategic_bomber1 = 1
+	cv_early_fighter = 1
+	cv_naval_bomber1 = 1
+	cv_CAS1 = 1
+	naval_bomber1 = 1
+	CAS1 = 1
+	early_submarine = 1
+	basic_submarine = 1
+	early_destroyer = 1
+	basic_destroyer = 1
+	early_light_cruiser = 1
+	basic_light_cruiser = 1
+	early_heavy_cruiser = 1
+	early_battleship = 1
+	basic_battleship = 1
+	early_battlecruiser = 1
+	early_carrier = 1
+	basic_carrier = 1
+	transport = 1
 }
-
+add_ideas = {
+	texan_history
+	texan_pride
+}
 set_politics = {
 
 	parties = {
@@ -29,18 +62,20 @@ set_politics = {
 	}
 	
 	ruling_party = democratic
-	last_election = "1933.3.5"
-	election_frequency = 48
+	last_election = "1935.1.15"
+	election_frequency = 24
 	elections_allowed = yes
 }
 
-set_convoys = 5
+set_research_slots = 4
+set_convoys = 100
+set_national_unity = 0.85
 
 create_country_leader = {
-	name = "Wilbert Lee O'Daniel"
-	desc = "POLITICS_WILBERT_LEE_O'DANIEL_DESC"
-	picture = "Portrait_Texas_Wilbert_Lee_O'Daniel.tga"
-	expire = "1965.1.1"
+	name = "James Allred"
+	desc = "POLITICS_JAMES_ALLRED_DESC"
+	picture = "Portrait_Texas_James_Allred.tga"
+	expire = "1959.9.24"
 	ideology = conservatism
 	traits = {
 		
@@ -51,10 +86,10 @@ create_country_leader = {
 	name = "Torkild Rieber"
 	desc = "POLITICS_TORKILD_RIEBER_DESC"
 	picture = "Portrait_Texas_Torkild_Rieber.tga"
-	expire = "1965.1.1"
-	ideology = nazism
+	expire = "1968.8.10"
+	ideology = fascism_ideology
 	traits = {
-		
+		friend_of_franco
 	}
 }
 
@@ -62,7 +97,7 @@ create_country_leader = {
 	name = "Wiliam Z. Foster"
 	desc = "POLITICS_WILLIAM_Z_FOSTER_DESC"
 	picture = "Portrait_Texas_William_Z_Foster.tga"
-	expire = "1965.1.1"
+	expire = "1961.9.1"
 	ideology = marxism
 	traits = {
 		
@@ -70,10 +105,10 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "James Allred"
-	desc = "POLITICS_JAMES_ALLRED_DESC"
-	picture = "Portrait_Texas_James_Allred.tga"
-	expire = "1965.1.1"
+	name = "Wilbert Lee O'Daniel"
+	desc = "POLITICS_WILBERT_LEE_O'DANIEL_DESC"
+	picture = "Portrait_Texas_Wilbert_Lee_O'Daniel.tga"
+	expire = "1969.5.11"
 	ideology = moderatism
 	traits = {
 		
@@ -103,7 +138,7 @@ create_corps_commander = {
 
 create_navy_leader = {
 	name = "Chester Nimitz"
-		picture = "Portrait_Texas_Chester_Nimitz.tga"
+	portrait_path = "gfx/leaders/Portrait_Texas_Chester_Nimitz.tga"
 	traits = { superior_tactician spotter }
 	skill = 5
 }

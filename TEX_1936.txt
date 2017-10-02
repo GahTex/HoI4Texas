@@ -20,57 +20,57 @@ division_template = {
 }
 
 units = {
-division= {	
-		name = "Texas Guard Division"
-		location = 5022
-		division_template = "Texas Guard Division"
-		start_experience_factor = 0.5
-	}
-division= {	
-		name = "Texas Guard Division"
-		location = 5022
-		division_template = "Texas Guard Division"
-		start_experience_factor = 0.5
-	}
-division= {	
-		name = "Texas Guard Division"
-		location = 5022
-		division_template = "Texas Guard Division"
-		start_experience_factor = 0.5
-	}
-division= {	
-		name = "Texas Guard Division"
-		location = 5022
-		division_template = "Texas Guard Division"
-		start_experience_factor = 0.5
-	}
-division= {	
-		name = "Texas Guard Division"
-		location = 5022
-		division_template = "Texas Guard Division"
-		start_experience_factor = 0.5
-	}
+	division= {	
+			name = "Texas Guard Division"
+			location = 5022
+			division_template = "Texas Guard Division"
+			start_experience_factor = 0.5
+		}
+	division= {	
+			name = "Texas Guard Division"
+			location = 5022
+			division_template = "Texas Guard Division"
+			start_experience_factor = 0.5
+		}
+	division= {	
+			name = "Texas Guard Division"
+			location = 5022
+			division_template = "Texas Guard Division"
+			start_experience_factor = 0.5
+		}
+	division= {	
+			name = "Texas Guard Division"
+			location = 5022
+			division_template = "Texas Guard Division"
+			start_experience_factor = 0.5
+		}
+	division= {	
+			name = "Texas Guard Division"
+			location = 5022
+			division_template = "Texas Guard Division"
+			start_experience_factor = 0.5
+		}
 
 
-division= {	
-		name = "Texas Guard Division"
-		location = 10337
-		division_template = "Texas Guard Division"
-		start_experience_factor = 0.5
-	}
-division= {	
-		name = "Texas Guard Division"
-		location = 10337
-		division_template = "Texas Guard Division"
-		start_experience_factor = 0.5
-	}
-}
+	division= {	
+			name = "Texas Guard Division"
+			location = 10337
+			division_template = "Texas Guard Division"
+			start_experience_factor = 0.5
+		}
+	division= {	
+			name = "Texas Guard Division"
+			location = 10337
+			division_template = "Texas Guard Division"
+			start_experience_factor = 0.5
+		}
 
-##### NAVAL UNITS #####
-navy = {
+
+	##### NAVAL UNITS #####
+	navy = {
 		name = "Texian Navy"
-		base = 241
-		location = 241  # Wilhemshaven
+		base = 10337
+		location = 10337  # Houston
 		ship = { name = "TSS Sam Houston" definition = heavy_cruiser  equipment = { heavy_cruiser_1 = { amount = 1 owner = TEX } } }	
 		ship = { name = "TSS Stephen Austin" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = TEX } } }
 		ship = { name = "TSS Jim Bowie" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = TEX } } } 		
@@ -87,7 +87,8 @@ navy = {
 		ship = { name = "TSS Alamo" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = TEX } } }
 		ship = { name = "TSS San Jacinto" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = TEX } } }
 		ship = { name = "TSS Dallas" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = TEX } } }
-
+	}
+}
 
 #########################
 ## STARTING PRODUCTION ##
