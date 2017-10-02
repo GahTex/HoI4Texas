@@ -1,0 +1,27 @@
+###########################
+# Texan Events
+###########################
+
+add_namespace = texan
+
+# Republic of Texas is back
+country_event = {
+	id = texan.1
+	title = texan.1.t
+	desc = texan.1.d
+	picture = GFX_news_event_soldiers_marching
+	
+	is_triggered_only = yes
+
+	trigger = {
+		tag = TEX
+	}
+
+	mean_time_to_happen = {days = 3}
+	
+	option = {
+		name = The Republic of Texas is back.
+		ai_chance = { factor = 100 }
+		add_political_power = 50
+	}
+}

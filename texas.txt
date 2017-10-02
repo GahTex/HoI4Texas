@@ -1,0 +1,29 @@
+focus_tree = {
+	id = texan_focus
+
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = TEX
+		}
+	}
+
+focus = {
+		id = TEX_political_focus
+		icon = GFX_goal_generic_demand_territory
+		text = extra_tech_slot
+		x = 3
+		y = 0
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_politcal_power = 150
+		}
+	}

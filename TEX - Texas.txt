@@ -1,0 +1,109 @@
+﻿capital = 375
+
+OOB = "TEX_1936"
+
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1
+	tech_recon = 1
+}
+
+set_politics = {
+
+	parties = {
+		democratic = { 
+			popularity = 80
+		}
+
+		fascism = {
+			popularity = 15
+		}
+		
+		communism = {
+			popularity = 2
+		}
+		
+		neutrality = { 
+			popularity = 3
+		}
+	}
+	
+	ruling_party = democratic
+	last_election = "1933.3.5"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_convoys = 5
+
+create_country_leader = {
+	name = "Wilbert Lee O'Daniel"
+	desc = "POLITICS_WILBERT_LEE_O'DANIEL_DESC"
+	picture = "Portrait_Texas_Wilbert_Lee_O'Daniel.tga"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Torkild Rieber"
+	desc = "POLITICS_TORKILD_RIEBER_DESC"
+	picture = "Portrait_Texas_Torkild_Rieber.tga"
+	expire = "1965.1.1"
+	ideology = nazism
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Wiliam Z. Foster"
+	desc = "POLITICS_WILLIAM_Z_FOSTER_DESC"
+	picture = "Portrait_Texas_William_Z_Foster.tga"
+	expire = "1965.1.1"
+	ideology = marxism
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "James Allred"
+	desc = "POLITICS_JAMES_ALLRED_DESC"
+	picture = "Portrait_Texas_James_Allred.tga"
+	expire = "1965.1.1"
+	ideology = moderatism
+	traits = {
+		
+	}
+}
+
+
+create_corps_commander = {
+	name = "Walton Walker"
+	portrait_path = "gfx/leaders/Portrait_Texas_Walker_Walton.tga"
+	traits = {  commando }
+	skill = 2
+}
+
+create_corps_commander = {
+	name = "Edwin Walker"
+	portrait_path = "gfx/leaders/Portrait_Texas_Edwin_Walker.tga"
+	traits = {  fortress_buster }
+	skill = 3
+}
+
+create_corps_commander = {
+	name = "Lucian Truscott"
+	portrait_path = "gfx/leaders/Portrait_Texas_Lucian_Truscott.tga"
+	skill = 1
+}
+
+create_navy_leader = {
+	name = "Chester Nimitz"
+		picture = "Portrait_Texas_Chester_Nimitz.tga"
+	traits = { superior_tactician spotter }
+	skill = 5
+}
