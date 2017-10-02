@@ -1,0 +1,81 @@
+ideas = {
+
+	country = {
+		texan_history = {
+			
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				conscription = 0.05
+				send_volunteers_tension = 0.00
+				unity_factor = 0.30
+			}
+			rule = {
+				can_create_factions = yes
+			}
+		}	
+		texan_pride = {
+
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				fascism_drift = 0.015
+				fascism_acceptace = 65
+			}
+		}
+		texan_workers = {
+
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				communism_drift = 0.015
+				communism_acceptace = 65
+			}
+		}
+	}
+
+	navy_chief = {
+	
+		chester_nimitz = {
+			
+			
+				allowed = {
+					original_tag = TEX
+				}
+				
+
+				
+				traits = { navy_chief_commerce_raiding_2 }
+				
+				ai_will_do = {
+					factor = 1
+				}
+		}	
+}
