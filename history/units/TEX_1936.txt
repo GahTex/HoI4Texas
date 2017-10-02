@@ -1,0 +1,107 @@
+division_template = {
+	name = "Texas Guard Division"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+        infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+        infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	
+	support = {
+        engineer = { x = 0 y = 0 }
+        artillery = { x = 0 y = 1 }
+	}
+}
+
+units = {
+	division= {	
+			name = "Texas Guard Division"
+			location = 5022
+			division_template = "Texas Guard Division"
+			start_experience_factor = 0.5
+		}
+	division= {	
+			name = "Texas Guard Division"
+			location = 5022
+			division_template = "Texas Guard Division"
+			start_experience_factor = 0.5
+		}
+	division= {	
+			name = "Texas Guard Division"
+			location = 5022
+			division_template = "Texas Guard Division"
+			start_experience_factor = 0.5
+		}
+	division= {	
+			name = "Texas Guard Division"
+			location = 5022
+			division_template = "Texas Guard Division"
+			start_experience_factor = 0.5
+		}
+	division= {	
+			name = "Texas Guard Division"
+			location = 5022
+			division_template = "Texas Guard Division"
+			start_experience_factor = 0.5
+		}
+
+
+	division= {	
+			name = "Texas Guard Division"
+			location = 10337
+			division_template = "Texas Guard Division"
+			start_experience_factor = 0.5
+		}
+	division= {	
+			name = "Texas Guard Division"
+			location = 10337
+			division_template = "Texas Guard Division"
+			start_experience_factor = 0.5
+		}
+
+
+	##### NAVAL UNITS #####
+	navy = {
+		name = "Texian Navy"
+		base = 10337
+		location = 10337  # Houston
+		ship = { name = "TSS Sam Houston" definition = heavy_cruiser  equipment = { heavy_cruiser_1 = { amount = 1 owner = TEX } } }	
+		ship = { name = "TSS Stephen Austin" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = TEX } } }
+		ship = { name = "TSS Jim Bowie" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = TEX } } } 		
+		ship = { name = "TSS Davy Crockett" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = TEX } } }		
+		ship = { name = "TSS William Travis" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = TEX } } }			
+		ship = { name = "TSS James Fannin" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = TEX } } }	
+		ship = { name = "TSS Sullivan Ross" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = TEX } } }			
+		ship = { name = "TSS John Ford" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = TEX } } }
+		ship = { name = "TSS Robert Lee Howze" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = TEX } } }
+		ship = { name = "TSS David E. Hayden" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = TEX } } }
+		ship = { name = "TSS Daniel R. Edwards" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = TEX } } }
+		ship = { name = "TSS Juan Seguin" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = TEX } } }
+		ship = { name = "TSS Emily West Morgan" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = TEX } } }
+		ship = { name = "TSS Alamo" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = TEX } } }
+		ship = { name = "TSS San Jacinto" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = TEX } } }
+		ship = { name = "TSS Dallas" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = TEX } } }
+	}
+}
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+
+instant_effect = {
+
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "TEX"
+		}
+		requested_factories = 1
+		progress = 0.1
+		efficiency = 50
+	}
