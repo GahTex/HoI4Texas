@@ -1,0 +1,190 @@
+focus_tree = {
+	id = texan_focus
+
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = TEX
+		}
+
+		modifier = {
+			add = 10
+			original_tag = TEX
+		}
+	}
+
+	default = no
+
+	focus = {
+		id = TEX_political_focus
+		icon = GFX_goal_generic_demand_territory
+		text = TEX_political_focus
+		x = 4
+		y = 0
+		cost = 10
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+	focus = {
+		id = TEX_new_way
+		prerequisite = { focus = TEX_political_focus }
+		mutually_exclusive = { focus = TEX_old_way}
+		icon = GFX_goal_generic_political_pressure
+		text = TEX_new_way
+		x = 2
+		y = 2
+		cost = 10
+		completion_reward = {
+			add_popularity = {
+			ideology = fascism
+			popularity = 0.2
+			}
+			add_popularity = {
+			ideology = communism
+			popularity = 0.2
+			}
+		}
+	}
+	focus = {
+		id = TEX_old_way
+		prerequisite = { focus = TEX_political_focus }
+		icon = GFX_goal_generic_support_democracy
+		text = TEX_old_way
+		x = 8
+		y = 2
+		cost = 10
+		completion_reward = {
+			add_popularity = {
+			ideology = democratic
+			popularity = 0.2
+			}
+		}
+	}
+	focus = {
+		id = TEX_nationalism
+		prerequisite = { focus = TEX_new_way }
+		mutually_exclusive = { focus = TEX_workers}
+		icon = GFX_goal_generic_support_fascism
+		text = TEX_nationalism
+		x = 0
+		y = 3
+		cost = 10
+		completion_reward = {
+			add_ideas = nationalism
+			add_popularity = {
+			ideology = fascism
+			popularity = 0.3
+			}
+		}
+	}
+	focus = {
+		id = TEX_workers
+		prerequisite = { focus = TEX_new_way }
+		icon = GFX_goal_generic_support_communism
+		text = TEX_workers
+		x = 5
+		y = 3
+		cost = 10
+		completion_reward = {
+			add_popularity = {
+			ideology = communism
+			popularity = 0.3
+			}
+		}
+	}
+	focus = {
+		id = TEX_alone_fascism
+		available = {
+		is_in_faction = no
+		is_puppet = no
+		}
+		prerequisite = { focus = TEX_nationalism }
+		icon = GFX_goal_generic_major_war
+		text = TEX_alone_fascism
+		x = 0
+		y = 4
+		cost = 10
+		completion_reward = {
+			add_popularity = {
+			ideology = fascism
+			popularity = 0.1
+			}
+			create_faction = "TEX_fascist_empire"
+		}
+	}
+	focus = {
+		id = TEX_join_axis
+		available = {
+		country_exists = GER
+		GER = { is_faction_leader = yes }
+		}
+		prerequisite = { focus = TEX_nationalism }
+		mutually_exclusive = { focus = TEX_alone_nationalism}
+		bypass = {
+		is_in_faction_with = GER
+		}
+		icon = GFX_goal_generic_military_deal
+		text = TEX_join_axis
+		x = 2
+		y = 4
+		cost = 10
+		completion_reward = {
+			add_popularity = {
+			ideology = fascism
+			popularity = 0.1
+			}
+			add_to_faction = FACTION_NAME_GER_fascism
+		}
+	}
+		focus = {
+		id = TEX_restore_borders
+		available = {
+		country_exists = USA
+		limit = {
+			USA = {
+			owns_state = 374
+			controls_state = 374
+			owns_state = 382
+			controls_state = 382
+			owns_state = 376
+			controls_state
+			}
+		}
+		}
+		prerequisite = { 
+				focus = TEX_alone_fascism
+				focus = TEX_join_axis
+		}
+		bypass = {
+		limit = {
+			TEX = {
+			owns_state = 374
+			controls_state = 374
+			owns_state = 382
+			controls_state = 382
+			owns_state = 376
+			controls_state = 376
+			}
+		}
+		}
+		icon = GFX_goal_generic_forceful_treaty
+		text = TEX_restore_borders
+		x = 1
+		y = 5
+		cost = 10
+		completion_reward = {
+			374 = {
+				add_claim_by = TEX
+			}
+			382 = {
+				add_claim_by = TEX
+			}
+			376 = {
+				add_claim_by = TEX
+			}
+		}
+	}
+}
